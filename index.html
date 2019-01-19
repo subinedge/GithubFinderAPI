@@ -7,12 +7,21 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Github Finder</title>
   <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/cerulean/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .alert-user{
+      width: 200px;
+      height: 100px;
+      background-color: red;
+      font-size: 1rem;
+    }
+  </style>
 </head>
 
 <body>
   <h1 class="jumbotron text-center display-3">🎁GITHUB FINDER🎁</h1>
   <div class="container searchContainer">
-    <div class="card card-body">
+    <div class="card card-body" id="card">
       <h3>Github Users</h3>
       <input type="text" class="form-control" id="searchBox" placeholder="Github ID">
     </div>

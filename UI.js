@@ -11,11 +11,11 @@ class UI {
         // get parent
         const container = document.querySelector('.container');
 
-        //get search box
-        const searchBox = document.querySelector('#searchBox');
+        //get card
+        const card = document.getElementById('card');
 
         //insert alert
-        container.insertBefore(div, searchBox);
+        container.insertBefore(div, card);
     }
 
 
@@ -51,7 +51,7 @@ class UI {
           <div class="h2"> Latest Repos </div>
           <div id="repos"></div>
 
-    `
+    `;
     }
 
     showRepos(repos) {
@@ -73,7 +73,7 @@ class UI {
                   </div>
               </div>
           `;
-        });
+        })
 
         // output the repositories to web page
         document.getElementById('repos').innerHTML = output;
