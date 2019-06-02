@@ -4,6 +4,10 @@ class UI {
     }
 
     showAlert(message, className) {
+
+        // clear alert messages
+        this.clearAlert();
+
         const div = document.createElement('div');
         div.className = className;
         div.appendChild(document.createTextNode(message));
@@ -16,6 +20,20 @@ class UI {
 
         //insert alert
         container.insertBefore(div, card);
+
+        // timeout for alert messages
+        setTimeout(() => {
+            this.clearAlert();
+        }, 3000)
+    }
+
+    // clear alert message
+
+    clearAlert() {
+        const notFoundAlert = document.querySelector('.alert');
+        if (notFoundAlert) {
+            notFoundAlert.remove();
+        }
     }
 
 
